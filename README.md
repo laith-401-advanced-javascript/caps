@@ -21,7 +21,6 @@ A real-time service that allows for vendors, such as flower shops or restaurants
 
 
 ### date
-Date published
 
 ---
 date: 2020-9-27 10:00
@@ -29,13 +28,13 @@ date: 2020-9-27 10:00
 
 ### author
 
-author: Laith Al Daree
+ Laith Al Daree
 ---
 
 ### location
 
 ---
-location: Az Zarqa-Al Azraq-Jordan
+Az Zarqa-Al Azraq-Jordan
 ---
 
 
@@ -54,8 +53,9 @@ linkedIn :https://www.linkedin.com/in/laith-aldaree/
 
 
 # Action gitHub link 
-[actiontest](https://github.com/laith-401-advanced-javascript/caps/actions/runs/264135633)
-
+```
+[actiontest](https://github.com/laith-401-advanced-javascript/caps/actions/runs/275340131)
+```
 
 # uml
 
