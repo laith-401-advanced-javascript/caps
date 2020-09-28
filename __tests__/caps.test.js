@@ -1,8 +1,13 @@
 'use strict';
 const event = require('../event.js');
 require('../server/caps.js');
+let server = require('../server/caps.js')
 
 
+afterAll(done => {
+    server.close();
+    done();
+});
 
 describe('Events Handler' , ()=>{
   let consoleSpy;

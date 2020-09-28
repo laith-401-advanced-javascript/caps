@@ -55,3 +55,4 @@ function broadcast(msg) {
 }
 
 
+module.exports = server
