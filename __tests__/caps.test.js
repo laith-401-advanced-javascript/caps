@@ -1,6 +1,6 @@
 'use strict';
-const event = require('../events.js');
-require('../caps.js');
+const event = require('../event.js');
+require('../server/caps.js');
 
 
 
@@ -10,26 +10,26 @@ describe('Events Handler' , ()=>{
   consoleSpy = jest.spyOn(console, 'log').mockImplementation();
 
 
-  let payload = {storeCompany:'laithStore' ,
-    orderId:123 ,
-    Customer: 'laith',
-    Address: 'jordan-al Azraq'};
+  // let payload = {storeCompany:'laithStore' ,
+  //   orderId:123 ,
+  //   Customer: 'laith',
+  //   Address: 'jordan-al Azraq'};
 
   console.log('consoleSpy',consoleSpy);
 
   it('pickup', () => {
-    event.emit('pickup',payload);
+    event.emit('pickup',{});
     expect(consoleSpy).toHaveBeenCalled();
   });
   
 
   it('in-transit', () => {
-    event.emit('in-transit',payload);
+    event.emit('in-transit',{});
     expect(consoleSpy).toHaveBeenCalled();
   });
   
   it('delivered', () => {
-    event.emit('delivered',payload);
+    event.emit('delivered',{});
     expect(consoleSpy).toHaveBeenCalled();
   });
 
