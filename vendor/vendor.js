@@ -10,11 +10,8 @@ caps.emit('join', (storeName) );
   
 
 caps.on('delivered', (payload) => {
-  console.log('payload>>>',payload);
 
-  if(payload.event === 'delivered'){
     console.log(`VENDOR:  : thank you for delivering ${payload.orderId}`);
-  }
 
 })
 

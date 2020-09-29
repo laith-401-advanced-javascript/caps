@@ -25,25 +25,30 @@ caps.on('connection', (socket) => {
   });
 
   socket.on('in-transit', (payload) => {
-    // send the message to everyone in the currentRoom
-    caps.to(currentRoom).emit('in-transit', payload);
+    caps.emit('in-transit', payload);
     broadcast('in-transit',payload);
-
+    
   });
   
   socket.on('delivered', (payload) => {
-    // send the message to everyone in the currentRoom
-    caps.to(currentRoom).emit('delivered', payload);
+    caps.emit('delivered', payload);
     broadcast('delivered',payload);
-
+    
   });
-
+  
 })
 
-
+/**
+ * this function to brodcast and send the event and payload 
+ * @param {*} event 
+ * @param {*} payload 
+ */
 function broadcast(event , payload){
-console.log({event,payload});
+  console.log({event,payload});
 }
+
+module.exports = caps;
+
 
 // const port = process.env.PORT || 4000;
 // server.listen(port, () => console.log(`server runing on ${port}`));
@@ -93,5 +98,3 @@ console.log({event,payload});
 //   }
 // }
 
-
-// module.exports = server

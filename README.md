@@ -5,7 +5,7 @@
 ------------ | -------------
 Home         | [Home](https://github.com/laith-401-advanced-javascript/caps)
  class-16    | [class-16](https://github.com/laith-401-advanced-javascript/caps/pull/1)
-  class-17    | [class-17](https://github.com/laith-401-advanced-javascript/caps/pull/2)
+class-17    | [class-17](https://github.com/laith-401-advanced-javascript/caps/pull/2) class-18    | [class-18](https://github.com/laith-401-advanced-javascript/caps/pull/3)
 
 
 
