@@ -3,7 +3,7 @@
 const io = require('socket.io')(3000);
 
 
-const caps = io.of("/caps");
+const caps = io.of('/caps');
 
 caps.on('connection', (socket) => {
   console.log(new Date().toLocaleTimeString(), 'Connected : ', socket.id);
@@ -17,7 +17,7 @@ caps.on('connection', (socket) => {
 
     console.log({ currentRoom });
 
-  })
+  });
 
   socket.on('pickup', (payload) => {
     caps.emit('pickup', payload);
@@ -36,7 +36,7 @@ caps.on('connection', (socket) => {
     
   });
   
-})
+});
 
 /**
  * this function to brodcast and send the event and payload 

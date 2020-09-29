@@ -16,8 +16,8 @@
 
 describe('Events Handler' , ()=>{
 
-    it('pickup', () => {
-    let x = 5 
+  it('pickup', () => {
+    let x = 5; 
     expect(x).toEqual(5);
   });
   
